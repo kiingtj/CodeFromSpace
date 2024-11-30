@@ -8,7 +8,7 @@ const Inicio = () => {
       <Header />
 
       <section className="flex flex-col items-center justify-center text-center py-20 mx-4 lg:px-0">
-        <p className="text-3xl lg:text-6xl font-bold mb-4 animate-slowpulse">
+        <p className="text-4xl lg:text-6xl font-bold mb-4 animate-slowpulse">
           Bienvenido a <span className="text-fosforito underline font-extrabold">Code From Space.</span>
         </p>
         <p className="lg:text-xl text-gray-300 lg:max-w-4xl mt-4 lg:mt-0">
