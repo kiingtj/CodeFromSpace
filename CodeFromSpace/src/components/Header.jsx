@@ -11,16 +11,24 @@ const Header = () => {
     useEffect(() => {
         if (menuOpen) {
             // Bloquea el scroll en todo el documento
-            document.body.style.overflow = "hidden";
-            document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden"; // Bloquea el scroll del body
+            document.documentElement.style.overflow = "hidden"; // Bloquea el scroll del html
+            document.body.style.position = "fixed"; // Evita que el contenido se desplace
+            document.body.style.width = "100%"; // Mantiene el ancho fijo del body
         } else {
             // Vuelve a habilitar el scroll
             document.body.style.overflow = "auto";
             document.documentElement.style.overflow = "auto";
+            document.body.style.position = ""; // Vuelve a la posición original
+            document.body.style.width = ""; // Restablece el ancho
         }
+
         return () => {
+            // Asegúrate de restaurar el comportamiento del scroll cuando el componente se desmonte
             document.body.style.overflow = "auto";
             document.documentElement.style.overflow = "auto";
+            document.body.style.position = "";
+            document.body.style.width = "";
         };
     }, [menuOpen]);
 
