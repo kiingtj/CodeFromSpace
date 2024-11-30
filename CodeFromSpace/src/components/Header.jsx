@@ -10,12 +10,17 @@ const Header = () => {
     // Bloquea el scroll al abrir el menú móvil
     useEffect(() => {
         if (menuOpen) {
+            // Bloquea el scroll en todo el documento
             document.body.style.overflow = "hidden";
+            document.documentElement.style.overflow = "hidden";
         } else {
+            // Vuelve a habilitar el scroll
             document.body.style.overflow = "auto";
+            document.documentElement.style.overflow = "auto";
         }
         return () => {
             document.body.style.overflow = "auto";
+            document.documentElement.style.overflow = "auto";
         };
     }, [menuOpen]);
 
