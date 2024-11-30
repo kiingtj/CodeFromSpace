@@ -38,8 +38,8 @@ const Header = () => {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     {/* Logo y nombre de la web */}
                     <div className="flex justify-between w-full lg:w-auto">
-                        <div className="flex justify-center items-center mx-auto lg:mx-0">
-                            <img src="/assets/images/logo/alien.png" className="mr-3 h-6 sm:h-9 animate-slowspin" alt="Logo Alien" />
+                        <div className="flex justify-center items-center mx-auto lg:mx-0 hover:text-rosa">
+                            <img src="/assets/images/logo/alien.png" className="mr-3 h-8 sm:h-9 animate-slowspin" alt="Logo Alien" />
                             <span className="self-center text-xl font-semibold whitespace-nowrap">Code From Space</span>
                         </div>
 
@@ -92,19 +92,19 @@ const Header = () => {
                     >
                         <ul className="flex flex-col space-y-4 font-medium lg:flex-row lg:space-x-8 lg:space-y-0 text-2xl lg:text-lg -mt-36 lg:-mt-0">
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-fosforito lg:bg-transparent lg:p-0">Inicio</a>
+                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa lg:bg-transparent lg:p-0">Inicio</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-fosforito lg:bg-transparent lg:p-0">CV</a>
+                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa lg:bg-transparent lg:p-0">CV</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-fosforito lg:bg-transparent lg:p-0">Proyectos</a>
+                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa lg:bg-transparent lg:p-0">Proyectos</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-fosforito lg:bg-transparent lg:p-0">Sobre mí</a>
+                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa lg:bg-transparent lg:p-0">Sobre mí</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-fosforito lg:bg-transparent lg:p-0">Contacto</a>
+                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa lg:bg-transparent lg:p-0">Contacto</a>
                             </li>
                             <li>
                                 <a href="#" className="mt-4 lg:mt-0 bg-rosa text-white font-semibold px-4 py-2 rounded-md hover:bg-primary-700">

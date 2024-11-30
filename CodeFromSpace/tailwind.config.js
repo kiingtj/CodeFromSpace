@@ -9,9 +9,10 @@ module.exports = {
       colors: {
         'gris': '#1a202c',
         'fosforito': '#39ff14',
-        'rosa': '#ff3b90',
+        'boton': '#343a40',
         'blanco': '#d9d9d9',
         'negro': '#080811',
+        'rosa': '#ff3b90',
       },
       animation: {
         slowspin: 'spin 6s linear infinite', // Cambia "4s" al tiempo que prefieras
