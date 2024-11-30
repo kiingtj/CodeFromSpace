@@ -11,7 +11,7 @@ module.exports = {
         'fosforito': '#39ff14',
         'rosa': '#ff3b90',
         'blanco': '#d9d9d9',
-        'negro': '#0b0d17',
+        'negro': '#080811',
       },
       animation: {
         slowspin: 'spin 6s linear infinite', // Cambia "4s" al tiempo que prefieras

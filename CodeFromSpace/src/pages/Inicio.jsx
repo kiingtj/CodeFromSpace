@@ -18,6 +18,20 @@ const Inicio = () => {
           Ver Proyectos
         </button>
       </section>
+
+      <section className="bg-rosa py-20 text-center text-white">
+        <h2 className="text-3xl font-bold">¿Listo para crear tu proyecto?</h2>
+        <p className="mt-4 text-xl">Si tienes una idea en mente, ¡estoy aquí para ayudarte! Contáctame ahora y juntos haremos realidad tu web.</p>
+        <a href="#contacto" className="mt-8 inline-block bg-fosforito px-6 py-3 rounded-lg text-negro font-semibold">Solicitar Web</a>
+      </section>
+
+      <section className="py-20 bg-gris text-center">
+        <h2 className="text-3xl text-fosforito font-bold">Mi Enfoque</h2>
+        <p className="text-xl text-gray-300 mt-6 lg:max-w-4xl mx-auto">
+          Mi objetivo es proporcionar soluciones de alta calidad, fáciles de usar y adaptadas a las necesidades únicas de cada cliente. Mi proceso es siempre colaborativo, asegurándome de que el resultado final sea exactamente lo que necesitas.
+        </p>
+      </section>
+
     </div>
   );
 };
