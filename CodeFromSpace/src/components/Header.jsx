@@ -26,7 +26,7 @@ const Header = () => {
                     {/* Logo y nombre de la web */}
                     <div className="flex justify-between w-full lg:w-auto">
                         <div className="flex justify-center items-center mx-auto lg:mx-0">
-                            <img src="/assets/images/logo/alien.png" className="mr-3 h-6 sm:h-9" alt="Logo Alien" />
+                            <img src="/assets/images/logo/alien.png" className="mr-3 h-6 sm:h-9 animate-slowspin" alt="Logo Alien" />
                             <span className="self-center text-xl font-semibold whitespace-nowrap">Code From Space</span>
                         </div>
 
@@ -79,7 +79,7 @@ const Header = () => {
                                 <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-fosforito lg:bg-transparent lg:p-0">Contact</a>
                             </li>
                             <li>
-                                <a href="#" className="mt-4 lg:mt-0 bg-rosa text-blanco font-semibold px-4 py-2 rounded-md hover:bg-primary-700">
+                                <a href="#" className="mt-4 lg:mt-0 bg-rosa text-white font-semibold px-4 py-2 rounded-md hover:bg-primary-700">
                                     Get Started
                                 </a>
                             </li>

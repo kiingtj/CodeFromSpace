@@ -13,6 +13,10 @@ module.exports = {
         'blanco': '#d9d9d9',
         'negro': '#0b0d17',
       },
+      animation: {
+        slowspin: 'spin 6s linear infinite', // Cambia "4s" al tiempo que prefieras
+        slowpulse: 'pulse 4s infinite',
+      },
     },
   },
   plugins: [],
