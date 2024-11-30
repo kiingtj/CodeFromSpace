@@ -9,8 +9,9 @@ module.exports = {
       colors: {
         'gris': '#1a202c',
         'fosforito': '#39ff14',
-        'verde': '#00ff7f',
-        'blanco': '#d9d9d9'
+        'rosa': '#ff3b90',
+        'blanco': '#d9d9d9',
+        'negro': '#0b0d17',
       },
     },
   },
