@@ -7,41 +7,55 @@ const Inicio = () => {
     <div className="min-h-screen">
       <Header />
 
-      <section className="flex flex-col items-center justify-center text-center py-20 mx-4 lg:px-0">
-        <p className="text-4xl lg:text-6xl font-bold mb-4 animate-slowpulse">
-          Bienvenido a <span className="text-fosforito underline font-extrabold">Code From Space.</span>
-        </p>
-        <p className="lg:text-xl text-gray-300 lg:max-w-4xl mt-4 lg:mt-0">
-          Soy Marcos Núñez, <span className='font-medium text-blanco'>desarrollador de aplicaciones web</span> y técnico en sistemas🚀.
-          Apasionado por crear <span className='underline font-medium text-blanco'>soluciones innovadoras</span> que brillan en <span className='underline font-medium text-blanco'>cualquier sector</span>.
-        </p>
-        <button className="mt-8 lg:px-6 px-2 lg:py-3 py-2 bg-boton text-white font-semibold rounded-md shadow-md duration-[1000ms] linear hover:bg-transparent border-2 hover:border-boton border-boton hover:text-blanco">
-          Ver Proyectos
-        </button>
+      <section className="relative flex flex-col items-center justify-center text-center py-20 lg:px-0 h-screen bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/logo/mialien.webp')" }}>
+        {/* Capa superpuesta */}
+        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+
+        {/* Capa de desenfoque en el borde inferior */}
+        <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-negro via-transparent to-transparent"></div>
+
+        {/* Contenido de la sección */}
+        <div className="relative mx-4">
+          <p className="text-4xl lg:text-6xl font-bold mb-4 animate-slowpulse text-white">
+            Bienvenido a <span className="text-rosa underline font-extrabold">Code From Space.</span>
+          </p>
+          <p className="lg:text-xl text-gray-300 lg:max-w-4xl mt-4 lg:mt-0">
+            Soy Marcos Núñez, <span className='font-medium text-blanco'>desarrollador de aplicaciones web</span> y técnico en sistemas🚀.
+            Apasionado por crear <span className='underline font-medium text-blanco'>soluciones innovadoras</span> que brillan en <span className='underline font-medium text-blanco'>cualquier sector</span>.
+          </p>
+          <button className="mt-8 lg:px-6 px-2 lg:py-3 py-2 bg-boton border-gray-600 text-white font-semibold rounded-md shadow-md duration-[1000ms] linear hover:bg-transparent border-2 hover:border-boton hover:text-blanco">
+            Ver Proyectos
+          </button>
+        </div>
       </section>
 
-      <section className="flex flex-col items-center text-center py-10 px-4 lg:px-0 max-w-3xl lg:mx-auto mx-4 bg-gris rounded-xl shadow-lg shadow-gris">
-        <h2 className="text-3xl font-bold text-fosforito">¿Listo para crear tu proyecto?</h2>
-        <p className="mt-4 lg:text-xl">
-          Si tienes una idea en mente, ¡estoy aquí para ayudarte! Contáctame ahora y juntos haremos realidad tu web.
-        </p>
-        <a
-          href="#contacto"
-          className="mt-8 lg:px-6 px-2 lg:py-3 py-2 bg-boton text-white font-semibold rounded-md shadow-md duration-[1000ms] linear hover:bg-transparent border-2 hover:border-boton border-boton hover:text-blanco"
-        >
-          Solicitar Web
-        </a>
-      </section>
 
-      <section className="flex flex-col items-center text-center py-10 px-4 lg:px-0 max-w-3xl lg:mx-auto mx-4 bg-gris rounded-xl shadow-lg shadow-gris mt-20 mb-20">
-        <h2 className="text-3xl text-fosforito font-bold">Mi Enfoque</h2>
-        <p className="lg:text-xl mt-6 lg:max-w-4xl">
-          Mi objetivo es proporcionar soluciones de alta calidad, fáciles de usar y adaptadas a las necesidades únicas de cada cliente.
-          Mi proceso es siempre colaborativo, asegurándome de que el resultado final sea exactamente lo que necesitas.
-        </p>
-      </section>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14 mb-20">
+        {/* Sección 1 */}
+        <section className="flex flex-col items-center text-center py-10 px-4 lg:px-0 max-w-3xl lg:mx-auto mx-4 bg-gris border border-gray-700 rounded-xl shadow-lg shadow-gris mb-10 md:mb-0">
+          <h2 className="text-3xl font-bold text-rosa">¿Listo para crear tu proyecto?</h2>
+          <p className="mt-4 lg:text-xl">
+            Si tienes una idea en mente, ¡estoy aquí para ayudarte! Contáctame ahora y juntos haremos realidad tu web.
+          </p>
+          <a
+            href="#contacto"
+            className="mt-8 lg:px-6 px-2 lg:py-3 py-2 bg-boton border-gray-600 text-white font-semibold rounded-md shadow-md duration-[1000ms] linear hover:bg-transparent border-2 hover:border-boton hover:text-blanco"
+          >
+            Solicitar Web
+          </a>
+        </section>
 
-      <Footer/>
+        {/* Sección 2 */}
+        <section className="flex flex-col items-center text-center py-10 px-4 lg:px-0 max-w-3xl lg:mx-auto mx-4 bg-gris border border-gray-700 rounded-xl shadow-lg shadow-gris">
+          <h2 className="text-3xl text-rosa font-bold">Mi Enfoque</h2>
+          <p className="lg:text-xl mt-6 lg:max-w-4xl">
+            Mi objetivo es proporcionar soluciones de alta calidad, fáciles de usar y adaptadas a las necesidades únicas de cada cliente.
+            Mi proceso es siempre colaborativo, asegurándome de que el resultado final sea exactamente lo que necesitas.
+          </p>
+        </section>
+      </div>
+
+      <Footer />
 
     </div>
   );
