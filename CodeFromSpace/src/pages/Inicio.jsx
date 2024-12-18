@@ -23,12 +23,17 @@ const Inicio = () => {
             Soy Marcos Núñez, <span className='font-medium text-blanco'>desarrollador de aplicaciones web</span> y técnico en sistemas🚀.
             Apasionado por crear <span className='underline font-medium text-blanco'>soluciones innovadoras</span> que brillan en <span className='underline font-medium text-blanco'>cualquier sector</span>.
           </p>
-          <button className="mt-8 lg:px-6 px-2 lg:py-3 py-2 bg-boton border-gray-600 text-white font-semibold rounded-md shadow-md duration-[1000ms] linear hover:bg-transparent border-2 hover:border-boton hover:text-blanco">
-            Ver Proyectos
-          </button>
+          <div className="relative mt-8 inline-block group">
+            {/* Sombra negra detrás del botón */}
+            <span className="absolute bottom-0 right-0 w-full h-full translate-x-1 translate-y-1 bg-gray-900 border-2 border-gray-600 rounded-md transition-all duration-[300ms] ease-in-out"></span>
+
+            {/* Botón principal */}
+            <button className="relative z-10 lg:px-6 px-2 lg:py-3 py-2 bg-boton duration-[300ms] border-gray-600 text-white font-semibold rounded-md shadow-md ease-in-out border-2 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-lg">
+              Ver Proyectos
+            </button>
+          </div>
         </div>
       </section>
-
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14 md:mt-20 mb-20">
         {/* Sección 1 */}
@@ -37,12 +42,15 @@ const Inicio = () => {
           <p className="mt-4 lg:text-xl">
             Si tienes una idea en mente, ¡estoy aquí para ayudarte! Contáctame ahora y juntos haremos realidad tu web.
           </p>
-          <a
-            href="#contacto"
-            className="mt-8 lg:px-6 px-2 lg:py-3 py-2 bg-boton border-gray-600 text-white font-semibold rounded-md shadow-md duration-[1000ms] linear hover:bg-transparent border-2 hover:border-boton hover:text-blanco"
-          >
-            Solicitar Web
-          </a>
+          <div className="relative mt-8 inline-block group">
+            {/* Sombra negra detrás del botón */}
+            <span className="absolute bottom-0 right-0 w-full h-full translate-x-1 translate-y-1 bg-gray-900 border-2 border-gray-600 rounded-md transition-all duration-[300ms] ease-in-out"></span>
+
+            {/* Botón principal */}
+            <button className="relative z-10 lg:px-6 px-2 lg:py-3 py-2 bg-boton duration-[300ms] border-gray-600 text-white font-semibold rounded-md shadow-md  ease-in-out border-2 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-lg">
+              Solicitar Web
+            </button>
+          </div>
         </section>
 
         {/* Sección 2 */}
