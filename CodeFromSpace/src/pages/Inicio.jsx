@@ -38,7 +38,7 @@ const Inicio = () => {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14 md:mt-20 mb-20 mx-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14 md:mt-20 mb-20 md:mx-6">
         {/* Sección 1 */}
         <section className="flex flex-col items-center text-center py-10 px-4 lg:px-0 max-w-3xl lg:mx-auto mx-4 bg-gris border border-gray-700 rounded-xl shadow-lg shadow-gris mb-10 md:mb-0">
           <h2 className="text-3xl font-bold text-rosa">¿Listo para crear tu proyecto?</h2>
