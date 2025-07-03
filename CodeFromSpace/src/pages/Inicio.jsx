@@ -38,11 +38,11 @@ const Inicio = () => {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14 md:mt-20 mb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14 md:mt-20 mb-20 mx-6">
         {/* Sección 1 */}
         <section className="flex flex-col items-center text-center py-10 px-4 lg:px-0 max-w-3xl lg:mx-auto mx-4 bg-gris border border-gray-700 rounded-xl shadow-lg shadow-gris mb-10 md:mb-0">
           <h2 className="text-3xl font-bold text-rosa">¿Listo para crear tu proyecto?</h2>
-          <p className="mt-4 lg:text-xl">
+          <p className="mt-4 lg:text-xl text-justify mx-4">
             Si tienes una idea en mente, ¡estoy aquí para ayudarte! Contáctame ahora y juntos haremos realidad tu web.
           </p>
           <div className="relative mt-8 inline-block group">
@@ -59,7 +59,7 @@ const Inicio = () => {
         {/* Sección 2 */}
         <section className="flex flex-col items-center text-center py-10 px-4 lg:px-0 max-w-3xl lg:mx-auto mx-4 bg-gris border border-gray-700 rounded-xl shadow-lg shadow-gris">
           <h2 className="text-3xl text-rosa font-bold">Mi Enfoque</h2>
-          <p className="lg:text-xl mt-6 lg:max-w-4xl">
+          <p className="lg:text-xl mt-6 lg:max-w-4xl text-justify mx-4">
             Mi objetivo es proporcionar soluciones de alta calidad, fáciles de usar y adaptadas a las necesidades únicas de cada cliente.
             Mi proceso es siempre colaborativo, asegurándome de que el resultado final sea exactamente lo que necesitas.
           </p>
