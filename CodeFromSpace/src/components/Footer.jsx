@@ -67,7 +67,7 @@ const Footer = () => {
       {/* Línea divisoria */}
       <div className="w-full border-t border-gray-500 my-8"></div>
       {/* Copyright */}
-      <div className="text-center text-xs">© 2024 Code From Space - All rights reserved.</div>
+      <div className="text-center text-xs">© {new Date().getFullYear()} Code From Space - All rights reserved.</div>
     </footer>
   );
 };

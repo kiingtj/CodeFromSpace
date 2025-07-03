@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar el menú desplegable
@@ -91,15 +92,19 @@ const Header = () => {
                         id="mobile-menu-2"
                     >
                         <ul className="flex flex-col space-y-4 font-medium lg:flex-row lg:space-x-8 lg:space-y-0 text-2xl lg:text-lg -mt-36 lg:-mt-0">
-                            <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa duration-[500ms] linear lg:bg-transparent lg:p-0">Inicio</a>
-                            </li>
+                            <Link to="/">
+                                <li>
+                                    <p className="block py-2 pr-4 pl-3 rounded hover:text-rosa duration-[500ms] linear lg:bg-transparent lg:p-0">Inicio</p>
+                                </li>
+                            </Link>
                             <li>
                                 <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa duration-[500ms] linear lg:bg-transparent lg:p-0">CV</a>
                             </li>
-                            <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa duration-[500ms] linear lg:bg-transparent lg:p-0">Proyectos</a>
-                            </li>
+                            <Link to="/proyectos">
+                                <li>
+                                    <p className="block py-2 pr-4 pl-3 rounded hover:text-rosa duration-[500ms] linear lg:bg-transparent lg:p-0">Proyectos</p>
+                                </li>
+                            </Link>
                             <li>
                                 <a href="#" className="block py-2 pr-4 pl-3 rounded hover:text-rosa duration-[500ms] linear lg:bg-transparent lg:p-0">Sobre mí</a>
                             </li>

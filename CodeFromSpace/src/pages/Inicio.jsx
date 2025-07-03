@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -28,9 +29,11 @@ const Inicio = () => {
             <span className="absolute bottom-0 right-0 w-full h-full translate-x-1 translate-y-1 bg-gray-900 border-2 border-gray-600 rounded-md transition-all duration-[300ms] ease-in-out"></span>
 
             {/* Botón principal */}
-            <button className="relative z-10 lg:px-6 px-2 lg:py-3 py-2 bg-boton duration-[300ms] border-gray-600 text-white font-semibold rounded-md shadow-md ease-in-out border-2 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-lg">
-              Ver Proyectos
-            </button>
+            <Link to="/proyectos">
+              <button className="relative z-10 lg:px-6 px-2 lg:py-3 py-2 bg-boton duration-[300ms] border-gray-600 text-white font-semibold rounded-md shadow-md ease-in-out border-2 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-lg">
+                Ver Proyectos
+              </button>
+            </Link>
           </div>
         </div>
       </section>
